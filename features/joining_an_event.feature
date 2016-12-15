@@ -6,3 +6,27 @@ Feature: Joining the Event
   As a new member
   So that I can join the event on time
   I would like to have a real time view of whether the hangout is live
+
+  Scenario: see event status
+    Given I visit the page for an event
+    Then I should see "event not live"
+    When the event goes live
+    Then I should see "event live"
+
+# ============================
+
+# Then(/I should see "(.*)"/) do |text|
+#   expect(page).to have_contents text
+# end
+
+# ============================
+
+
+# feature 'joining the event' do
+
+#   scenario 'join' do
+#     visit '/events'
+#     expect(page).to have_contents "event not live"
+#   end
+
+# end
