@@ -1,7 +1,7 @@
 # EventManager
 A system for managing events and hangout participation - microservice API and basic UI
 
-
+```gherkin
 Feature: Joining the Event
   As a busy AV member
   So that I can work out if I want to join an event
@@ -25,3 +25,4 @@ Feature: Event Details
   As an interested party
   So I can make decisions about attending an event
   I would like to know time and recurrence details
+```
