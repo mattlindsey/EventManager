@@ -12,8 +12,8 @@ Feature: Joining the Event
   I would like to have a real time view of whether the hangout is live
 
 Feature: Upcoming Event View
-   As an AV member
-   So that I can see if the next sessions fit my busy day
+  As an AV member
+  So that I can see if the next sessions fit my busy day
   I'd like to see the upcoming events of the day
 
 Feature: Private Events
