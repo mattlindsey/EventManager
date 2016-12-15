@@ -1,5 +1,9 @@
+Given(/^an event exists$/) do
+  @event = Event.create
+end
+
 Given(/^I visit the page for an event$/) do
-  visit 'events/1'
+  visit "events/#{@event.id}"
 end
 
 Then(/^I should see "([^"]*)"$/) do |text|
@@ -7,5 +11,6 @@ Then(/^I should see "([^"]*)"$/) do |text|
 end
 
 When(/^the event goes live$/) do
-  Event.find(1).go_live
+  @event.live = true
+  @event.save
 end

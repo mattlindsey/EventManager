@@ -7,6 +7,9 @@ Feature: Joining the Event
   So that I can join the event on time
   I would like to have a real time view of whether the hangout is live
 
+  Background:
+    Given an event exists
+
   Scenario: see event status
     Given I visit the page for an event
     Then I should see "event not live"
