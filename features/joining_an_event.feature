@@ -14,6 +14,7 @@ Feature: Joining the Event
     Given I visit the page for an event
     Then I should see "event not live"
     When the event goes live
+#    And I visit the page for an event
     Then I should see "event live"
 
 # ============================
